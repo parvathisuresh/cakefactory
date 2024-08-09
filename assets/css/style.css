@@ -1,0 +1,272 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* CSS Variables */
+:root {
+    --font-family: "Rubik", sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.6;
+    --color-text: #201E20;
+    --color-background: #ffffff;
+    --color-primary: #201E20;
+    --color-primary-hover: #3f3e3f;
+    --color-header-footer-text: #fff;
+    --spacing-base: 20px;
+    --border-radius: 100px;
+    --hero-padding: 100px 0;
+    --hero-color-text: #fff;
+    --hero-h1-size: 2.5rem;
+    --hero-p-size: 1.25rem;
+    --text-p-highlight: #E32F6C;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: var(--spacing-base);
+
+}
+
+/* Links */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-header-footer-text);
+    padding: 1em 3em;
+    text-align: center;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+
+
+
+/* header */
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav h1 {
+    font-weight: bold;
+}
+
+.nav_links a {
+    margin-right: 20px;
+}
+
+.nav_links a:hover {
+    text-decoration: underline;
+    color: var(--color-primary-hover);
+}
+
+.bg_img {
+    background-image: url("../img/hero.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+/* hero Section */
+
+.hero {
+    margin-top: 3em;
+}
+
+.hero_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero_img img {
+    border-radius: 32px;
+    width: 90%;
+}
+
+.hero_content h1 {
+    width: 60%;
+    font-size: 2.25rem;
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+
+.hero_content p {
+    font-size: 1rem;
+
+}
+
+.hero_content a {
+    font-size: 1rem;
+}
+
+/* about-us */
+.about_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em
+}
+
+.about_content ul li {
+    margin-bottom: 32px;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+
+.about_highlight {
+    color: var(--text-p-highlight);
+}
+
+.about_image img {
+    width: 100%;
+    border-radius: 32px;
+}
+
+.about_us {
+    margin-block: 2em;
+}
+
+/* How Cake Factory Works */
+
+.works_title {
+    margin-bottom: 3em;
+}
+
+.step_image-1 img {
+    width: 90%;
+    border-radius: 32px;
+
+
+}
+
+.step_wrapper,
+.step_wrapper_two {
+    display: flex;
+    justify-content: center;
+    /* Added a value to justify-content */
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.step_wrapper_two {
+    flex-direction: column-reverse;
+}
+
+.step {
+    font-size: 3.7rem;
+    font-weight: 800;
+    color: #757575;
+}
+
+
+
+.work_step p {
+    text-align: justify;
+}
+
+.step_title {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+/* contact-us */
+
+.contact_content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 200px
+}
+
+.contact_detail {
+    margin-right: 2em;
+}
+
+.contact_detail>div {
+    margin-bottom: 2.2em;
+}
+
+.contact_address,
+.contact_email,
+.contact_phone,
+.contact_workingtime {
+    margin-bottom: 2.2em;
+}
+
+.map iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 32px;
+}
+
+/* footer */
+.footer {
+    background: url('../img/hero.png');
+    background-position: center;
+    padding: 2em 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.footer_nav a {
+    margin: 0 1em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer_nav a:hover {
+    text-decoration: underline;
+}
+
+.footer_brand h2 {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+    font-weight: 700;
+}
